@@ -1,0 +1,356 @@
+<body onload='VBScript:CheckDate ("")' bgcolor='green' >
+<h1 align=center style=text-align:center;background-color:white;><b><marquee behavior=alternate> MEDIATION AFRICA CENTRAL MONITORING TOOL</marquee><br> </b></p>  </h1><h3 align=center style=text-align:center;background-color:yellow;><b> Tue Jul 14 16:12:42 IST 2015
+ <br> </b></p>  </h3>
+<html>
+
+<head><script language='VbScript' src='datecheck.vbs' type='text/VbScript'></script><Title>MEDIATION AFRICA  </Title>
+
+<script>
+ 
+function autoRefresh1()
+{
+   window.location.reload();
+}
+ 
+setInterval('autoRefresh1()', 10000); // this will reload page after every 5 secounds; Method II
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+
+window.onerror = null;
+ var bName = navigator.appName;
+ var bVer = parseInt(navigator.appVersion);
+ var NS4 = (bName == "Netscape" && bVer >= 4);
+ var IE4 = (bName == "Microsoft Internet Explorer" 
+ && bVer >= 4);
+ var NS3 = (bName == "Netscape" && bVer < 4);
+ var IE3 = (bName == "Microsoft Internet Explorer" 
+ && bVer < 4);
+ var blink_speed=100;
+ var i=0;
+ 
+if (NS4 || IE4) {
+ if (navigator.appName == "Netscape") {
+ layerStyleRef="layer.";
+ layerRef="document.layers";
+ styleSwitch="";
+ }else{
+ layerStyleRef="layer.style.";
+ layerRef="document.all";
+ styleSwitch=".style";
+ }
+}
+
+//BLINKING
+function Blink(layerName){
+ if (NS4 || IE4) { 
+ if(i%2==0)
+ {
+ eval(layerRef+'["'+layerName+'"]'+
+ styleSwitch+'.visibility="visible"');
+ }
+ else
+ {
+ eval(layerRef+'["'+layerName+'"]'+
+ styleSwitch+'.visibility="hidden"');
+ }
+ } 
+ if(i<1)
+ {
+ i++;
+ } 
+ else
+ {
+ i--
+ }
+ setTimeout("Blink('"+layerName+"')",blink_speed);
+}
+//  End -->
+</script>
+</head>
+<script language='javaScript'>
+function addcomment()
+{
+	window.open('input.html', null, 'width=350,height=180,scrollbars=no');
+}
+function popitup(url) {
+	//alert("called");
+	newwindow=window.open(url,null,'height=510,width=470,scrollbars=yes');
+	if (window.focus) {newwindow.focus();}
+	return false;
+}
+
+function popitup_details(url) {
+        //alert("called");
+        newwindow=window.open(url,null,'height=450,width=600,scrollbars=yes');
+        if (window.focus) {newwindow.focus();}
+        return false;
+}
+
+
+function delcomment()
+{
+        window.open('http://10.14.1.104:55555/cgi-bin/comm.pl', null, 'width=650,height=180,scrollbars=yes');
+}
+
+function viewRoster()
+{
+        window.open('/home/aman/Desktop/MON_DASHBOARD/Output_report1.html', null, 'width=12200,height=1000,scrollbars=yes');
+}
+
+function EscalationMatrix()
+{
+        window.open('/home/aman/Desktop/MON_DASHBOARD/DCS_PLS_REPORT/dcs_plan_stat.html', null, 'width=12200,height=350,scrollbars=no');
+}
+function viewLastF()
+{
+        window.open('/home/aman/Desktop/MON_DASHBOARD/input_report1.html', null, 'width=12200,height=1000,scrollbars=yes');
+}
+function viewServerList()
+{
+        window.open('/home/aman/Desktop/MON_DASHBOARD/-----------------', null, 'width=12200,height=1000,scrollbars=yes');
+}
+
+</script>
+
+<SCRIPT language=JavaScript1.2>
+
+//change 1 to another integer to alter the scroll speed. Greater is faster
+
+var speed=1
+
+var currentpos=0,alt=1,curpos1=0,curpos2=-1
+
+function initialize(){
+
+startit()
+
+}
+
+function scrollwindow(){
+
+if (document.all &&
+
+!document.getElementById)
+
+temp=document.body.scrollTop
+
+else
+
+temp=window.pageYOffset
+
+if (alt==0)
+
+alt=2
+
+else
+
+alt=1
+
+if (alt==0)
+
+curpos1=temp
+
+else
+
+curpos2=temp
+
+if (curpos1!=curpos2){
+
+if (document.all)
+
+currentpos=document.body.scrollTop+speed
+
+else
+
+currentpos=window.pageYOffset+speed
+
+window.scroll(0,currentpos)
+
+}
+
+else{
+
+currentpos=0
+
+window.scroll(0,currentpos)
+
+}
+
+}
+
+function startit(){
+
+setInterval("scrollwindow()",50)
+
+}
+
+window.onload=initialize
+
+</SCRIPT>
+
+<body onload='VBScript:CheckDate ("15/03/2015/19/30/00")' bgcolor='GREEN'>
+<input type='button' onClick='javascript:viewLastF()' name='CDR Verification' value='Input_Report'></input><input type='button' onClick='javascript:viewRoster()' name='Output_Report' value='Output_Report'><input type='button' onClick='javascript:viewServerList()' name='Server' value='Test'><input type='button' onClick='javascript:EscalationMatrix()' name='output_buffer_status' value='Dcs_Plan_Status'></input></input><input type='button' onClick='javascript:addcomment()' name='btnComment' value='File Polling Status'></input><input type='button' onClick='javascript:delcomment()' name='btnDelcomment' value='File Trans. Status'><input type='button' onClick='javascript:popitup_details("/home/aman/Desktop/MON_DASHBOARD/Missing_files1.html")' name='checkDbpStaus' value='Missing File Status'><input type='button' onClick='javascript:popitup_details("http://10.14.1.104:55555//cgi-bin/jersey_status.pl")' name='checkjerStaus' value='PRA Status'>
+</html>
+
+<table border=1 width='100%' >
+<h2 align=center style=text-align:center;background-color:red;><b> SERVER's INPUT BUFFER  STATUS 
+<br> </b></p>  </h2><tr bgcolor='#736F6E'> <td> <font color=white> OPCO </font></td><td> <font color=white> IP </font></td><td> <font color=white>  </font></td><td> <font color=white> BUFFER_FILES_COUNT </font></td><td> <font color=white> STATUS </font></td><td> <font color=white> DATE </font></td></tr><tr bgcolor='#FFFF00'><td>ALL_OPCO</td><td>SERVERS</td><td>INPUT_BUFFER</td><td>BUFFER_FILES_LESS_1000</td><td>OK</td><td>14-07-2015=16:12:42</td></tr>
+
+</table>
+
+<table border=1 width='100%' >
+<h2 align=center style=text-align:center;background-color:red;><b> SERVER's OUTPUT BUFFER  STATUS 
+<br> </b></p>  </h2><tr bgcolor='#736F6E'> <td> <font color=white> OPCO </font></td><td> <font color=white> IP </font></td><td> <font color=white> BUFFER_POTAL </font></td><td> <font color=white> BUFFER_FILES_COUNT </font></td><td> <font color=white> STATUS </font></td><td> <font color=white> LOCAL_DATE=14-07-2015=16:12:42<BR>SERVER_DATE </font></td></tr><tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>OUTPUT_BUFFER_STATUS_GH</td><td>200525</td><td><span style="background-color:#FF0000">NOT_OK</span></td><td>20150714=11:31:06</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGERIA</td><td>172.24.0.221</td><td>OUTPUT_BUFFER_STATUS_NG</td><td>73379</td><td><span style="background-color:#FF0000">NOT_OK</span></td><td>20150714=11:32:35</td></tr>
+
+</table>
+
+<table border=1 width='100%' >
+<h2 align=center style=text-align:center;background-color:red;><b> SERVER's FAILED_FILES  STATUS > 5000
+<br> </b></p>  </h2><tr bgcolor='#736F6E'> <td> <font color=white> OPCO </font></td><td> <font color=white> IP </font></td><td> <font color=white>  </font></td><td> <font color=white> FAILED_FILES_COUNT </font></td><td> <font color=white> STATUS </font></td><td> <font color=white> DATE </font></td></tr><tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>FAILD_FILES_STATUS</td><td><span style="background-color:#FF0000">NOT_OK</span></td><td>TueJul1411:31:00WAT2015</td></tr>
+
+</table>
+
+<table border=1 width='100%' >
+<h2 align=center style=text-align:center;background-color:red;><b> Server PRA STATUS 
+<br> </b></p>  </h2><tr bgcolor='#736F6E'> <td> <font color=white> OPCO </font></td><td> <font color=white> IP </font></td><td> <font color=white> PRA_AREA </font></td><td> <font color=white> PRA_PORTAL </font></td><td> <font color=white> PRA_STATUS </font></td><td> <font color=white> LOCAL_DATE=14-07-2015=16:12:42<BR>SERVER_DATE </font></td></tr><tr bgcolor='#FFFF00'><td>SL</td><td>172.25.160.111</td><td>PRA_SL_AREA</td><td>SL_EMSC_RC</td><td><span style="background-color:#FF0000">NOT_OK</span></td><td>20150705=09:01:43</td></tr>
+
+</table>
+
+<table border=1 width='100%' >
+<h2 align=center style=text-align:center;background-color:red;><b> CGI Application Status 
+<br> </b></p>  </h2><tr bgcolor='#736F6E'> <td> <font color=white> OPCO </font></td><td> <font color=white> IP </font></td><td> <font color=white> CGI_Application </font></td><td> <font color=white> STATUS </font></td><td> <font color=white> DATE </font></td></tr><tr bgcolor='#FFFF00'><td>ALL_OPCO</td><td>SERVERS</td><td>CGI_Application_status</td><td>OK</td><td>14-07-2015=16:12:42</td></tr>
+
+</table>
+
+<table border=1 width='100%' >
+<h2 align=center style=text-align:center;background-color:red;><b> SERVER's DISK SPACE UTILIZATION > 90%
+<br> </b></p>  </h2><tr bgcolor='#736F6E'> <td> <font color=white> OPCO </font></td><td> <font color=white> IP </font></td><td> <font color=white> DISK_USED </font></td><td> <font color=white> MOUNT_POINT </font></td><td> <font color=white> DATE </font></td></tr><tr bgcolor='#FFFF00'><td>NIGER</td><td>172.26.192.17</td><td>87</td><td>/dcs/arch01</td><td>WedJul807:06:48WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGER</td><td>172.26.192.17</td><td>87</td><td>/dcs/arch02</td><td>WedJul807:06:48WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGER</td><td>172.26.192.17</td><td>87</td><td>/dcs/arch03</td><td>WedJul807:06:48WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGER</td><td>172.26.192.17</td><td>87</td><td>/dcs/arch04</td><td>WedJul807:06:48WAT2015</td></tr>
+
+</table>
+
+<table border=1 width='100%' >
+<h2 align=center style=text-align:center;background-color:red;><b> SERVER's INODE  UTILIZATION > 85%
+<br> </b></p>  </h2><tr bgcolor='#736F6E'> <td> <font color=white> OPCO </font></td><td> <font color=white> IP </font></td><td> <font color=white> INODE_USED </font></td><td> <font color=white> STATUS </font></td><td> <font color=white> DATE </font></td></tr><tr bgcolor='#FFFF00'><td>ALL_OPCO</td><td>SERVERS</td><td>DISK_INODE_UTILIZATION</td><td>OK</td><td>14-07-2015=16:12:42</td></tr>
+
+</table>
+
+<table border=1 width='100%' >
+<h2 align=center style=text-align:center;background-color:red;><b> SERVER CPU UTILIZATION STATUS > 50%
+<br> </b></p>  </h2><tr bgcolor='#736F6E'> <td> <font color=white> OPCO </font></td><td> <font color=white> IP </font></td><td> <font color=white> CPU_STATUS </font></td><td> <font color=white> CPU_USED% </font></td><td> <font color=white> DATE </font></td></tr><tr bgcolor='#FFFF00'><td>ALL_OPCO</td><td>SERVERS</td><td>CPU_UTILIZATION_STATUS</td><td>OK</td><td>14-07-2015=16:12:42</td></tr>
+
+</table>
+
+<table border=1 width='100%' >
+<h2 align=center style=text-align:center;background-color:red;><b> SERVER UP TIME
+<br> </b></p>  </h2><tr bgcolor='#736F6E'> <td> <font color=white> OPCO </font></td><td> <font color=white> IP </font></td><td> <font color=white> UPTIME </font></td><td> <font color=white>  </font></td><td> <font color=white>  </font></td><td> <font color=white>  </font></td><td> <font color=white>  </font></td><td> <font color=white>  </font></td><td> <font color=white> DATE </font></td></tr><tr bgcolor='#FFFF00'><td>KENYA_NEW</td><td>172.23.6.118</td><td>13:30:13up248days</td><td>20:54</td><td>2users</td><td>loadaverage:3.13</td><td>3.84</td><td>4.15</td><td>TueJul1413:30:13EAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>BURKINA</td><td>172.25.0.87</td><td>10:32:44up90days</td><td>3:44</td><td>0users</td><td>loadaverage:1.23</td><td>2.13</td><td>1.90</td><td>TueJul1410:32:44GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>11:31:06up27days</td><td>12:18</td><td>2users</td><td>loadaverage:6.13</td><td>5.95</td><td>5.60</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>ZAMBIA</td><td>172.27.128.188</td><td>12:31:14up229days</td><td>19:21</td><td>10users</td><td>loadaverage:26.20</td><td>13.73</td><td>11.15</td><td>TueJul1412:31:14CAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>DRC</td><td>172.26.0.69</td><td>11:25:11up1day</td><td>6:26</td><td>1user</td><td>loadaverage:26.11</td><td>14.45</td><td>11.58</td><td>TueJul1411:25:11WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGER</td><td>172.26.192.17</td><td>07:06:48up181days</td><td>18:19</td><td>2users</td><td>loadaverage:8.08</td><td>6.82</td><td>4.64</td><td>WedJul807:06:48WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGERIA</td><td>172.24.0.221</td><td>11:32:35up27days</td><td>12:19</td><td>5users</td><td>loadaverage:11.27</td><td>12.76</td><td>13.98</td><td>TueJul1411:32:35WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>SL</td><td>172.25.160.111</td><td>09:01:43up116days</td><td>3:03</td><td>2users</td><td>loadaverage:3.37</td><td>3.25</td><td>3.05</td><td>SunJul509:01:43GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>RWANDA</td><td>172.27.192.224</td><td>10:30:58up94days</td><td>9:16</td><td>1user</td><td>loadaverage:13.38</td><td>7.95</td><td>8.26</td><td>TueJul1410:30:58GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>11:31:00up102days</td><td>20:50</td><td>2users</td><td>loadaverage:3.72</td><td>2.20</td><td>1.94</td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>CONGO</td><td>172.25.64.193</td><td>12:31:36up44days</td><td>13:25</td><td>1user</td><td>loadaverage:6.44</td><td>4.68</td><td>3.65</td><td>TueJul1412:31:36WAT2015</td></tr>
+
+</table>
+
+<table border=1 width='100%' >
+<h2 align=center style=text-align:center;background-color:red;><b> Files Polling Status 
+<br> </b></p>  </h2><tr bgcolor='#736F6E'> <td> <font color=white> OPCO </font></td><td> <font color=white> IP </font></td><td> <font color=white> UP_STREAM_NAME<br>[CustEq|DPortal] </font></td><td> <font color=white> DELAYED_BY<br>[HH:MM:SS] </font></td><td> <font color=white> LAST_FILE_POLLED_AT<br>[DD/MM/YYYYHH:MM:SS] </font></td><td> <font color=white> LAST_POLLED<br>[FileName] </font></td><td> <font color=white> DATE </font></td></tr><tr bgcolor='#FFFF00'><td>KENYA_NEW</td><td>172.23.6.118</td><td>UG_SMSC|SMSC_B</td><td>05:54:56</td><td>14/07/201505:05:12</td><td>SMSC_B_20150713234500.92008.txt</td><td>TueJul1413:30:13EAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>KENYA_NEW</td><td>172.23.6.118</td><td>UW_SMSC|SMSC_A</td><td>35:00:13</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan35:00:13Hrs.</td><td>TueJul1413:30:13EAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>KENYA_NEW</td><td>172.23.6.118</td><td>UW_OCS|SMR</td><td>35:00:12</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan35:00:12Hrs.</td><td>TueJul1413:30:13EAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>KENYA_NEW</td><td>172.23.6.118</td><td>MG_INP|TWSS</td><td>35:00:06</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan35:00:06Hrs.</td><td>TueJul1413:30:13EAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>BURKINA</td><td>172.25.0.87</td><td>NoPollingDelay|</td><td></td><td></td><td></td><td>TueJul1410:32:44GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_HLR|HLRDUMP</td><td>33:00:05</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan33:00:05Hrs.</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_HLR|VOMS</td><td>33:00:05</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan33:00:05Hrs.</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_HLR|VOUCHER</td><td>33:00:05</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan33:00:05Hrs.</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_INP|TAPIN</td><td>33:00:05</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan33:00:05Hrs.</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_INP|TABS</td><td>33:00:05</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan33:00:05Hrs.</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_INP|CPRSMNP</td><td>33:00:05</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan33:00:05Hrs.</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>ZAMBIA</td><td>172.27.128.188</td><td>ZM_HLR|HLRDUMP</td><td>28:58:31</td><td>13/07/201506:02:00</td><td>HLR220150713</td><td>TueJul1412:31:14CAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>DRC</td><td>172.26.0.69</td><td>CD_INP|WIFI</td><td>33:00:08</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan33:00:08Hrs.</td><td>TueJul1411:25:11WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>DRC</td><td>172.26.0.69</td><td>CD_INP|TWSSCHG</td><td>33:00:08</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan33:00:08Hrs.</td><td>TueJul1411:25:11WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGER</td><td>172.26.192.17</td><td>NE_USSD|USSD</td><td>31:00:16</td><td>07/07/201500:00:00</td><td>NofilePolledformorethan31:00:16Hrs.</td><td>WedJul807:06:48WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGERIA</td><td>172.24.0.221</td><td>NG_MA|SNAPMA</td><td>03:00:01</td><td>04/06/201504:00:29</td><td>ABSDP5.DUMP_subscriber_CS5_20150604.csv</td><td>TueJul1411:32:35WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGERIA</td><td>172.24.0.221</td><td>NG_SGSN|SGSN01</td><td>15:17:08</td><td>03/06/201515:43:27</td><td>chsLog.111_20150603154314</td><td>TueJul1411:32:35WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGERIA</td><td>172.24.0.221</td><td>NG_SMSC|SMSC02</td><td>03:00:19</td><td>04/06/201504:00:17</td><td>SMSC1_cdr.log.20150604012644</td><td>TueJul1411:32:35WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGERIA</td><td>172.24.0.221</td><td>NG_WAR2|CCNODE1</td><td>31:00:38</td><td>03/06/201500:00:00</td><td>NofilePolledformorethan31:00:38Hrs.</td><td>TueJul1411:32:35WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGERIA</td><td>172.24.0.221</td><td>NG_WAR2|CCNODE2</td><td>31:00:39</td><td>03/06/201500:00:00</td><td>NofilePolledformorethan31:00:39Hrs.</td><td>TueJul1411:32:35WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGERIA</td><td>172.24.0.221</td><td>TSTHMSC|ABHMS01</td><td>31:00:39</td><td>03/06/201500:00:00</td><td>NofilePolledformorethan31:00:39Hrs.</td><td>TueJul1411:32:35WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGERIA</td><td>172.24.0.221</td><td>NG_SDP|ABSDP07</td><td>31:00:33</td><td>03/06/201500:00:00</td><td>NofilePolledformorethan31:00:33Hrs.</td><td>TueJul1411:32:35WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGERIA</td><td>172.24.0.221</td><td>NG_SDP|ABSDP09</td><td>31:00:33</td><td>03/06/201500:00:00</td><td>NofilePolledformorethan31:00:33Hrs.</td><td>TueJul1411:32:35WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGERIA</td><td>172.24.0.221</td><td>NG_SDP|ABSDP10</td><td>31:00:33</td><td>03/06/201500:00:00</td><td>NofilePolledformorethan31:00:33Hrs.</td><td>TueJul1411:32:35WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>SL</td><td>172.25.160.111</td><td>SL_INP|TWSS</td><td>33:00:04</td><td>04/07/201500:00:00</td><td>NofilePolledformorethan33:00:04Hrs.</td><td>SunJul509:01:43GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>SL</td><td>172.25.160.111</td><td>SL_HLR|VOMS</td><td>33:00:04</td><td>04/07/201500:00:00</td><td>NofilePolledformorethan33:00:04Hrs.</td><td>SunJul509:01:43GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>RWANDA</td><td>172.27.192.224</td><td>RW_HLR|VOUCHER</td><td>16:00:00</td><td>13/07/201501:00:06</td><td>VOU_SUMM_20150713_201507130210.DAT</td><td>TueJul1410:30:58GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>RWANDA</td><td>172.27.192.224</td><td>RW_INP|OCS</td><td>41:00:08</td><td>12/07/201500:00:00</td><td>NofilePolledformorethan41:00:08Hrs.</td><td>TueJul1410:30:58GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>RWANDA</td><td>172.27.192.224</td><td>RW_NMSC|NMSC01</td><td>41:00:09</td><td>12/07/201500:00:00</td><td>NofilePolledformorethan41:00:09Hrs.</td><td>TueJul1410:30:58GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>RWANDA</td><td>172.27.192.224</td><td>RW_HLR|VOMS</td><td>41:00:06</td><td>12/07/201500:00:00</td><td>NofilePolledformorethan41:00:06Hrs.</td><td>TueJul1410:30:58GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>ISTDate/Time:2015071415::30::03|</td><td></td><td></td><td></td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>Serverdate/Time:2015071411::00::03|</td><td></td><td></td><td></td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>|</td><td></td><td></td><td></td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>UpstreamName|Delayedby</td><td>LastFilePolledAt</td><td>LastPolled</td><td></td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>(CustEq|DPortal)</td><td>(HH:MM:SS)</td><td>(DD/MM/YYYYHH:MM:SS)</td><td>FileName</td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>GA_INP|MCA</td><td>09:25:00</td><td>14/07/201501:35:02</td><td>Unip.201507140100.cdr</td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>GA_VAS|MOBR</td><td>09:02:03</td><td>14/07/201501:58:00</td><td>MOD_2015-07-13.txt</td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>AT_INP|MSR</td><td>35:00:02</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan35:00:02Hrs.</td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>GA_HLR|VOMS</td><td>35:00:02</td><td>13/07/201500:00:00</td><td>NofilePolledformorethan35:00:02Hrs.</td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>CONGO</td><td>172.25.64.193</td><td>NoPollingDelay|</td><td></td><td></td><td></td><td>TueJul1412:31:36WAT2015</td></tr>
+
+</table>
+
+<table border=1 width='100%' >
+<h2 align=center style=text-align:center;background-color:red;><b> Files Transfer Status 
+<br> </b></p>  </h2><tr bgcolor='#736F6E'> <td> <font color=white> OPCO </font></td><td> <font color=white> IP </font></td><td> <font color=white> UP_STREAM_NAME<br>[CustEq|DPortal] </font></td><td> <font color=white> DELAYED_BY<br>[HH:MM:SS] </font></td><td> <font color=white> LAST_FILE_TRANSFER_AT<br>[DD/MM/YYYYHH:MM:SS] </font></td><td> <font color=white> LAST_TRANSFER_AT<br>[FileName] </font></td><td> <font color=white> DATE </font></td></tr><tr bgcolor='#FFFF00'><td>KENYA_NEW</td><td>172.23.6.118</td><td>UW_BI|CLR</td><td>09:15:23</td><td>14/07/201501:45:48</td><td>clr20150714_113_001926.unl</td><td>TueJul1413:30:13EAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>KENYA_NEW</td><td>172.23.6.118</td><td>UW_BI|HLRDUMP</td><td>35:01:14</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan35:01:14Hrs.</td><td>TueJul1413:30:13EAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>KENYA_NEW</td><td>172.23.6.118</td><td>UW_FMS|HLRDUMP</td><td>21:23:24</td><td>13/07/201513:38:05</td><td>OK_HSS9860_1_28_20150713040054.tar</td><td>TueJul1413:30:13EAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>KENYA_NEW</td><td>172.23.6.118</td><td>UW_FMS|VOMS</td><td>35:01:34</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan35:01:34Hrs.</td><td>TueJul1413:30:13EAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>KENYA_NEW</td><td>172.23.6.118</td><td>UW_RA|HLRDUMP</td><td>21:23:45</td><td>13/07/201513:38:05</td><td>OK_HSS9860_1_28_20150713040054.tar</td><td>TueJul1413:30:13EAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>KENYA_NEW</td><td>172.23.6.118</td><td>UW_RA_L|OCSD</td><td>35:01:58</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan35:01:58Hrs.</td><td>TueJul1413:30:13EAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>KENYA_NEW</td><td>172.23.6.118</td><td>UW_WR|CLR</td><td>09:16:12</td><td>14/07/201501:45:48</td><td>clr20150714_113_001926.unl</td><td>TueJul1413:30:13EAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>BURKINA</td><td>172.25.0.87</td><td>BF_BKUP|SMSC</td><td>17:59:08</td><td>13/07/201512:00:57</td><td>smsc1b_daily_150712</td><td>TueJul1410:32:44GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_BI|HLRDUMP</td><td>41:00:07</td><td>12/07/201500:00:00</td><td>NofileTransferedformorethan41:00:07Hrs.</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_BI|VOU</td><td>14:07:31</td><td>13/07/201502:52:38</td><td>TTCCNMAIN_005061_20150712165206_GHCCN2.csv</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_FMS|VOU</td><td>07:22:17</td><td>13/07/201509:38:03</td><td>SDPOUTPUTCDR_4001_ac1sdp4a_SUB_2187_20150713-08180</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_ICT|EMSC_ER</td><td>41:00:21</td><td>12/07/201500:00:00</td><td>NofileTransferedformorethan41:00:21Hrs.</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_RA|SDPDA</td><td>06:43:06</td><td>13/07/201510:17:20</td><td>SDP6.DUMP_dedicatedaccount_20150713.csv</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_RA|SDPMA</td><td>13:21:22</td><td>13/07/201503:39:04</td><td>SDP6.DUMP_subscriber_20150713.csv</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_RA_M|SDPDA</td><td>06:44:08</td><td>13/07/201510:16:22</td><td>SDP6.DUMP_dedicatedaccount_20150713.csv</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_RA_M|SDPMA</td><td>13:41:24</td><td>13/07/201503:19:06</td><td>SDP6.DUMP_subscriber_20150713.csv</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_SV|SDPCGW</td><td>41:00:37</td><td>12/07/201500:00:00</td><td>NofileTransferedformorethan41:00:37Hrs.</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GHANA</td><td>172.24.0.220</td><td>GH_SV|TAPIN</td><td>41:00:38</td><td>12/07/201500:00:00</td><td>NofileTransferedformorethan41:00:38Hrs.</td><td>TueJul1411:31:06WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>ZAMBIA</td><td>172.27.128.188</td><td>ZM_BI|HLRDUMP</td><td>28:26:54</td><td>13/07/201506:33:47</td><td>HLR220150713</td><td>TueJul1412:31:14CAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>ZAMBIA</td><td>172.27.128.188</td><td>ZM_FMS|HLRDUMP</td><td>28:27:12</td><td>13/07/201506:33:47</td><td>HLR220150713</td><td>TueJul1412:31:14CAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>ZAMBIA</td><td>172.27.128.188</td><td>ZM_RA_M|HLRDUMP</td><td>28:27:39</td><td>13/07/201506:33:47</td><td>HLR220150713</td><td>TueJul1412:31:14CAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>DRC</td><td>172.26.0.69</td><td>CD_CDRA|AAA</td><td>35:00:16</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan35:00:16Hrs.</td><td>TueJul1411:25:11WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>DRC</td><td>172.26.0.69</td><td>CD_FMS|RBT</td><td>35:00:30</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan35:00:30Hrs.</td><td>TueJul1411:25:11WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGER</td><td>172.26.192.17</td><td>NE_PACS|CCN</td><td>07:55:40</td><td>07/07/201523:04:49</td><td>CDRCCN_4004_150619-0329-CCN_51_2B_CIPIP-150707-194</td><td>WedJul807:06:48WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>NIGERIA</td><td>172.24.0.221</td><td>TM_PABX|HMSCTXP</td><td>33:02:51</td><td>03/06/201500:00:00</td><td>NofileTransferedformorethan33:02:51Hrs.</td><td>TueJul1411:32:35WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>RWANDA</td><td>172.27.192.224</td><td>RW_ACS|SDPDA</td><td>31:00:08</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan31:00:08Hrs.</td><td>TueJul1410:30:58GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>RWANDA</td><td>172.27.192.224</td><td>RW_BI|VOU</td><td>05:00:15</td><td>14/07/201502:00:05</td><td>VOU_SUMM_20150714_201507140210.DAT</td><td>TueJul1410:30:58GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>RWANDA</td><td>172.27.192.224</td><td>RW_FMS|VOU</td><td>05:00:24</td><td>14/07/201502:00:05</td><td>VOU_SUMM_20150714_201507140210.DAT</td><td>TueJul1410:30:58GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>RWANDA</td><td>172.27.192.224</td><td>RW_RALC|OCS</td><td>22:59:12</td><td>13/07/201508:01:26</td><td>AIR_OFC_20150601235848_00029939.cdr</td><td>TueJul1410:30:58GMT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>GA_MIS|MCA</td><td>09:19:41</td><td>14/07/201501:40:39</td><td>Unip.201507140100.cdr</td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>GA_SV|MOBR</td><td>09:00:24</td><td>14/07/201502:00:01</td><td>MOBR000.000053_20150713000000.evt</td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>GABON</td><td>172.25.118.166</td><td>GA_SV|RBT</td><td>09:50:24</td><td>14/07/201501:10:01</td><td>RBT0000.000092_20150713000000.evt</td><td>TueJul1411:31:00WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>CONGO</td><td>172.25.64.193</td><td>CG_CDRA|GGSN</td><td>29:00:09</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan29:00:09Hrs.</td><td>TueJul1412:31:36WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>CONGO</td><td>172.25.64.193</td><td>CG_CDRA|SGSN</td><td>29:00:11</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan29:00:11Hrs.</td><td>TueJul1412:31:36WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>CONGO</td><td>172.25.64.193</td><td>CG_FMS|CRBT</td><td>29:00:14</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan29:00:14Hrs.</td><td>TueJul1412:31:36WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>CONGO</td><td>172.25.64.193</td><td>CG_HBS|EG_GGSN</td><td>29:00:19</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan29:00:19Hrs.</td><td>TueJul1412:31:36WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>CONGO</td><td>172.25.64.193</td><td>CG_RA|CRBT</td><td>29:00:25</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan29:00:25Hrs.</td><td>TueJul1412:31:36WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>CONGO</td><td>172.25.64.193</td><td>CG_RA|HLRDUMP</td><td>29:00:27</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan29:00:27Hrs.</td><td>TueJul1412:31:36WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>CONGO</td><td>172.25.64.193</td><td>CW_BI|HLR</td><td>29:00:32</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan29:00:32Hrs.</td><td>TueJul1412:31:36WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>CONGO</td><td>172.25.64.193</td><td>CW_CDRA|HLR</td><td>29:00:40</td><td>13/07/201500:00:00</td><td>NofileTransferedformorethan29:00:40Hrs.</td><td>TueJul1412:31:36WAT2015</td></tr>
+<tr bgcolor='#FFFF00'><td>CONGO</td><td>172.25.64.193</td><td>CW_RA|HLR</td><td>08:48:56</td><td>13/07/201520:12:11</td><td>OK_HSS9860_1_20150713042025.tar</td><td>TueJul1412:31:36WAT2015</td></tr>
+
+</table>
+
